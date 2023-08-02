@@ -1,0 +1,32 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+/* Variables */
+:root {
+  /* Color */
+  --bg-primary: #0e1114;
+  --bg-secondary: #20272f;
+  --bg-tertiary: #fff;
+  --gray-700: #515151;
+  --gray-400: #b9b9ba;
+  --gray-100: #fdfdfd;
+
+  --white: #fff;
+  --green: #21e6c1;
+  --blue: #1f4287;
+
+  /* Fonts */
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --big-font: 6.4rem;
+  --large-font: 4.8rem;
+  --medium-font: 3.2rem;
+  --small-font: 2.4rem;
+  --little-font: 1.8rem;
+
+  /* Box Shadow */
+  --box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.35);
+  --box-shadow-2: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
