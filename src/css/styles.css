@@ -79,7 +79,7 @@ header {
   justify-content: space-between;
   background-color: #21e6c1;
 }
-.container {
+.main__container {
   width: 100%;
   height: calc(100vh - 90px);
   padding: 2rem 5%;
@@ -87,7 +87,7 @@ header {
 }
 .content {
   width: 100%;
-  height: 800px;
+  height: 700px;
   display: flex;
   background-color: cadetblue;
 }
@@ -159,7 +159,7 @@ header {
 /* Skills */
 .skills {
   color: var(--white);
-  height: 50vh;
+  height: 30vh;
   background: url(../img/bd/teclado.jpg);
   background-repeat: none;
   background-size: cover;
@@ -184,7 +184,33 @@ header {
   background-color: var(--bg-secondary);
 }
 
-/* Resposividade */
+/* --- Independent Components --- */
+
+.btn-social img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-social ul li a {
+  width: 45px;
+  height: 45px;
+  background-color: var(--green);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 4px 0;
+}
+.btn-social ul li a:hover {
+  border: 3px solid var(--green);
+  transition: 0.4s ease-in-out;
+  transform: translateY(-6px);
+  /* transform: scale(1.2); */
+  background-color: var(--white);
+}
+
+/* --- Responsividade --- */
+
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
