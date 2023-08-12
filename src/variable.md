@@ -1,0 +1,11 @@
+--gray-700: #252e38;
+  --gray-600: #2e3947;
+  --gray-500: #374455;
+  --gray-400: #3d4c5e;
+  --gray-300: #c3c8cd;
+  --gray-200: #e2e4e7;
+  --gray-100: #fdfdfd;
+
+  --white: #fff;
+  --green: #21e6c1;
+  --blue: #1f4287;
