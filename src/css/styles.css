@@ -81,6 +81,7 @@ section {
 
 header {
   width: 100%;
+  height: 100px;
   padding: 2rem 5%;
   position: fixed;
   top: 0;
@@ -95,7 +96,7 @@ header {
 }
 nav ul {
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
 }
 nav ul li a {
   font-size: 2rem;
@@ -121,7 +122,6 @@ nav ul li a:hover::after {
 .container {
   width: 100%;
   height: 100vh;
-  margin-top: ;
   padding: 2rem 5%;
   background-color: #1f4287;
 }
@@ -309,11 +309,58 @@ header.scrolled {
   opacity: 0.9;
 }
 
+/* --- Menu Hamburger --- */
+
+.hamburger {
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+  display: none;
+}
+.hamburger .bar {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 7px auto;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.bar:nth-child(1).active {
+  transform: rotate(45deg) translateY(16px);
+}
+.bar:nth-child(2).active {
+  opacity: 0;
+}
+.bar:nth-child(3).active {
+  transform: rotate(-45deg) translateY(-16px);
+}
+
 /* --- Responsividade --- */
 
-@media (max-width: 1200px) {
+@media (max-width: 1140px) {
   nav ul {
-    display: none;
+    position: fixed;
+    top: 100px;
+    right: -100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: chocolate;
+    transition: 0.5s;
+  }
+  nav ul {
+    padding: 20px;
+  }
+  nav ul li a:hover::after {
+    width: 0;
+  }
+  nav ul.active {
+    right: 0;
+  }
+  .hamburger {
+    display: inline-block;
   }
 }
 @media (max-width: 768px) {

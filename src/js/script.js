@@ -23,3 +23,18 @@ document.addEventListener("scroll", () => {
     header.classList.remove("scrolled")
   }
 })
+
+// Menu Hamburger Animation
+const bar = document.querySelectorAll(".bar")
+const Hamburger = document.querySelector(".hamburger")
+const menu = document.querySelector("#nav ul")
+console.log(bar)
+console.log(Hamburger)
+console.log(menu)
+
+Hamburger.addEventListener("click", () => {
+  bar.forEach(function (barClass) {
+    barClass.classList.toggle("active")
+    menu.classList.toggle("active")
+  })
+})
